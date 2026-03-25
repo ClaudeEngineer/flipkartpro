@@ -19,7 +19,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3000",          // React dev server
   "http://127.0.0.1:3000",          // alternative localhost
-  process.env.FRONTEND_URL || ""    // production frontend URL
+  process.env.FRONTEND_URL || "https://flipcartezshop.netlify.app/"    // production frontend URL
 ];
 
 app.use(cors({
