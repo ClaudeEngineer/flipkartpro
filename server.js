@@ -49,6 +49,8 @@ app.use("/api/cart",       require("./routes/cartRoutes"));
 app.use("/api/orders",     require("./routes/orderRoutes"));
 app.use("/api/users",      require("./routes/userRoutes"));
 
+app.get("/", (req, res) => res.json({ status: "OK", message: "ShopKart API running 🚀" }));
+
 // ── Health check ──────────────────────────────────────
 app.get("/api/health", (req, res) => res.json({ status: "OK", message: "ShopKart API running 🚀" }));
 
